@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Schedule</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+    <script src="code.js"></script>
+    <style>
+        body{
+            background-color: cyan;
+        }
+        form{
+            background-color: burlywood;
+        }
+        fieldset {
+            background-color: burlywood;
+        }
+        legend {
+            font-weight: 700;
+        }
+        p{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+<h1>My Schedule</h1>
+<fieldset>Days of the Week
+    <legend>Choose a Day To View Schedule</legend>
+    <form>
+        <label for="monday">Monday</label>
+        <input type="radio" name="monday" id="Monday">
+        <br>
+        <labe for="tuesday">Tuesday</labe>
+        <input type="radio" name="monday" id="Tuesday">
+        <br>
+        <label for="wednesday">Wednesday</label>
+        <input type="radio" name="monday" id="Wednesday">
+        <br>
+        <label for="thursday">Thursday</label>
+        <input type="radio" name="monday" id="Thursday">
+        <br>
+        <label for="friday">Friday</label>
+        <input type="radio" name="monday" id="Friday">
+        <br>
+        <label for="saturday">Saturday</label>
+        <input type="radio" name="monday" id="Saturday">
+        <br>
+        <label for="sunday">Sunday</label>
+        <input type="radio" name="monday" id="Sunday">
+
+
+    </form>
+</fieldset>
+
+<p id="weekSchedule">Your <span id="date"></span> schedule looks like <span id="activity"></span> from <span id="time"></span></p>
+
+</body>
+</html>
